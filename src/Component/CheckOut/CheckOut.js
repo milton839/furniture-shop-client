@@ -4,7 +4,7 @@ import { Table,Spinner } from 'react-bootstrap';
 import { UserContext } from '../../App';
 
 const CheckOut = () => {
-    document.title = "Checout Page";
+    document.title = "Checkout Page";
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [checkProduct, setCheckProduct] = useState([]);
     const [count, setCount] = useState(1);
