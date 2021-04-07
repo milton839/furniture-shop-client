@@ -13,10 +13,7 @@ const Orders = () => {
         fetch('https://furniture-shop-839.herokuapp.com/ordersProduct?email='+loggedInUser.email)
         .then(response => response.json())
         .then(data => setOrders(data));
-    }, [])
-    console.log(orders)
-    console.log(orders[0]?.name)
-    console.log(orders[0]?.shipment.name)
+    }, []);
     
     return (
         <div className="container">
